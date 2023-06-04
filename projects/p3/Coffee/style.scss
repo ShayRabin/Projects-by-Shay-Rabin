@@ -1,0 +1,104 @@
+@import  url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;900&family=Satisfy&display=swap");
+
+body {
+    direction: rtl;
+    color: #020253;
+    font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.row {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.img {
+    background-image: url(Coffee.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.col-md-5 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 16px;
+    width: 57%;
+    @media screen and (max-width:768px) {
+        width: 85%;
+      }
+
+
+    .btn {
+        margin-top: 15px;
+        background-color:#020253;
+        border-radius: 0;
+        font-size: 22px ;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+label {
+    font-weight: 900;
+    color: black;
+    display: block;
+    margin: 20px 0;
+    border-bottom: 4px solid #020253;
+    @media screen and (max-width:768px) {
+        width: 100%;
+        text-align: right;
+      }
+    
+    .form-control {
+        border-radius: 0;
+        height: 50px;
+        border: none;
+        background-color: #E5EEFF;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            text-align: right;
+          }
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    .row {
+        position: static;
+        flex-flow: wrap-reverse;
+    }
+
+    form {
+        margin-top: 60px;
+    }
+
+    .img {
+        height: 200px;
+    }
+}
