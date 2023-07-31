@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&family=Satisfy&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  direction: ltr;
+  background-image: url(background\ task.jpeg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 200px;  
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  font-family: "Satisfy", cursive;
+  text-shadow: 3.5px 0px black;
+}
+
+.frame {
+  width: 80%;
+  background-image: url(notebook.png);
+  background-position: top;
+  max-width: 900px;
+  min-height: 300px;
+  margin: auto;
+  padding: 138px 16px 80px;
+}
+
+.task {
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 12px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 0;
+  margin: 0px;
+}
+
+button {
+  background-color: #8bc34a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input,
+select {
+  border: 1px solid black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.alert {
+  padding: 8px 12px;
+  margin: 0 -16px;
+  text-align: center;
+  border: 1px dashed;
+  border-right: 0;
+  border-left: 0;
+  font-size: 20px;
+  background-color: gray;
+  margin-bottom: 12px;
+  color: white;
+}
+
+header {
+  margin-bottom: 12px;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 930px) {
+  .tasks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .tasks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.tasks > div {
+  box-shadow: 0 0 3px #bababa;
+  background-color: #fae570;
+  border-radius: 5px;
+  padding: 0 14px;
+}
+
+.tasks > div {
+  border-right: 10px solid;
+}
+
+.tasks > div.low {
+  border-color: lightblue;
+}
+
+.tasks > div.medium {
+  border-color: green;
+}
+
+.tasks > div.high {
+  border-color: red;
+}
+
+.tasks > div.completed {
+  border: none;
+  background-color: #29aa74;
+}
+
+.tasks footer {
+  padding: 8px 0;
+}
+
+.tasks footer .remove {
+  background-color: #bb4949;
+}/*# sourceMappingURL=style.css.map */

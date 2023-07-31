@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rest API</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="loginStatus()">
+    <h1>Shopping list</h1>
+
+    <div class="frame">
+        <div class="login">
+            <label>
+                Name
+                <input type="text" id="userName">
+            </label>
+
+            <label>
+                Password
+                <input type="password">
+            </label>
+
+            <button onclick="login()">Log in</button>
+        </div>
+
+        <div class="user">
+            <span class="userName"></span>
+            <button class="logout" onclick="logout()">Log out</button>
+        </div>
+
+        <div class="products">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Product name</th>
+                        <th>Price</th>
+                        <th>Discount</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><input id="name" type="text" placeholder="Product name"></td>
+                        <td><input id="price" type="number" placeholder="Price"></td>
+                        <td><input id="discount" type="number" placeholder="Discount"></td>
+                        <td><button onclick="addProduct()">Add product</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="loaderFrame">
+        <div class="loader"></div>
+    </div>
+
+    <div id="snackbar"></div>
+</body>
+
+</html>
